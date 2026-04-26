@@ -1,7 +1,9 @@
+import Home from "./pages/Home/page";
+
 function App() {
   return (
     <>
-      <section id="center">Slovik</section>
+      <Home />
     </>
   );
 }
