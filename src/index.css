@@ -2,6 +2,7 @@
 
 body {
   background-color: var(--color-page-background);
+  font-family: "Montserrat", sans-serif;
 }
 
 @theme {
