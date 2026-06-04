@@ -1,22 +1,23 @@
 import { HouseIcon, LibraryBigIcon, BrainIcon } from "lucide-react";
+import { ROUTES } from "../../utils/consts/routes";
 
 export const TABS_CONFIG = [
   {
     id: "home",
     title: "Home",
-    href: "/",
+    href: ROUTES.HOME,
     icon: HouseIcon,
   },
   {
     id: "library",
     title: "Library",
-    href: "/library",
+    href: ROUTES.LIBRARY,
     icon: LibraryBigIcon,
   },
   {
     id: "practice",
     title: "Practice",
-    href: "/practice",
+    href: ROUTES.PRACTICE,
     icon: BrainIcon,
   },
 ];
