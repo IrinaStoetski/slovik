@@ -1,18 +1,53 @@
 @import "tailwindcss";
 
 body {
-  background-color: var(--color-page-background);
+  min-height: 100vh;
+  background-color: var(--bg-main);
   font-family: "Montserrat", sans-serif;
+  color: var(--text-primary);
 }
 
 @theme {
-  /* Semantic tokens */
+  --bg-main: var(--color-slate-950);
+  --bg-surface: var(--color-slate-900);
+  --bg-field: var(--color-slate-800);
 
-  --color-page-background: var(--color-slate-950);
-  --color-default-border: var(--color-gray-600);
-  --color-default-text: var(--color-violet-50);
-  --color-default-icon: var(--color-violet-400);
+  --accent: var(--color-indigo-600);
+  --accent-light: var(--color-indigo-400);
+  --accent-glow-shadow: var(--color-indigo-500);
 
-  /* Component tokens */
-  --text-input-shadow: 0px 0px 16px 7px var(--color-violet-800);
+  /* Typography */
+  --text-primary: var(--color-slate-50); /* Clean high-contrast text */
+  --text-secondary: var(
+    --color-slate-400
+  ); /* Placeholder and secondary labels */
+  --text-muted: var(
+    --color-slate-600
+  ); /* For days outside the current month in the calendar */
+
+  /* Borders & Dividers */
+  --border-muted: var(
+    --color-slate-800
+  ); /* Subtle structural lines (e.g., the "or" separator) */
+  --border-focus: var(--color-indigo-500); /* Active border highlight color */
+
+  /* --- Tailwind Mapping Assignments --- */
+  --color-bg: var(--bg-main);
+  --color-surface: var(--bg-surface);
+  --color-field: var(--bg-field);
+
+  --color-primary: var(--text-primary);
+  --color-secondary: var(--text-secondary);
+  --color-muted: var(--text-muted);
+
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+
+  --color-border-ui: var(--border-muted);
+  --color-border-active: var(--border-focus);
+
+  /* Effects & Radius */
+  --shadow-input-glow: 0 0 0 2px var(--border-focus);
+  --shadow-icon-glow: 0 0 20px var(--accent-glow-shadow);
+  --radius-brand: 0.75rem;
 }

@@ -2,27 +2,35 @@ import type { InputProps } from "react-aria-components";
 import { Input as RACInput } from "react-aria-components";
 import { twMerge } from "tailwind-merge";
 
-interface Props extends InputProps {
+interface Props extends Omit<InputProps, "onChange"> {
   className?: string;
   wrapperClassName?: string;
   icon?: React.ReactNode;
+  placeholder?: string;
+  onChange?: (value: string) => void;
 }
 
-const Input = ({ className, wrapperClassName, icon }: Props) => {
-  return (
-    <div className={twMerge("relative w-full", wrapperClassName)}>
-      {icon}
-      <RACInput
-        className={twMerge(
-          "w-full rounded-md border border-default-border p-4 pl-10 text-default-text shadow-(--text-input-shadow)",
-          className,
-        )}
-        defaultValue=""
-        placeholder="Capture a word or phrase"
-        aria-label="Capture a word or phrase"
-      />
-    </div>
-  );
-};
+const Input = ({
+  className,
+  wrapperClassName,
+  icon,
+  placeholder,
+  onChange,
+}: Props) => (
+  <div className={twMerge("relative w-full", wrapperClassName)}>
+    {icon}
+    <RACInput
+      className={twMerge(
+        "w-full rounded-md border border-accent p-4 pl-10 shadow-input-glow placeholder:text-muted",
+        icon ? "pl-12" : "pl-4",
+        className,
+      )}
+      defaultValue=""
+      placeholder={placeholder}
+      aria-label={placeholder}
+      onChange={(event) => onChange?.(event.target.value)}
+    />
+  </div>
+);
 
 export default Input;

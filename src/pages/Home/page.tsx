@@ -3,15 +3,25 @@ import { SparklesIcon } from "lucide-react";
 
 const Home = () => {
   return (
-    <div className="flex flex-col items-center justify-center px-3 gap-5 pt-5">
+    <section className="flex flex-col items-center justify-center px-3 gap-5 pt-5">
       <Input
+        placeholder="Capture a word or phrase"
         icon={
-          <SparklesIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-default-icon" />
+          <SparklesIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 text-accent" />
         }
       />
-      <h1 className="w-full">Welcome to the Home Page</h1>
-      <p>This is a simple home page component.</p>
-    </div>
+      <div className="flex items-center flex-col text-center mt-6">
+        <div className="rounded-full p-2 flex items-center justify-center w-16 h-16 bg-surface">
+          <SparklesIcon className="w-8 h-8 text-accent" />
+        </div>
+        <h1 className="w-full text-primary my-3 text-2xl font-bold">
+          Stat capturing words
+        </h1>
+        <p className="text-secondary">
+          Type any English word or phrase to get started.
+        </p>
+      </div>
+    </section>
   );
 };
 
