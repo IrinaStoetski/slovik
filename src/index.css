@@ -1,10 +1,14 @@
 @import "tailwindcss";
 
 body {
-  min-height: 100vh;
   background-color: var(--bg-main);
   font-family: "Montserrat", sans-serif;
   color: var(--text-primary);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+#root {
+  min-height: 100vh;
 }
 
 @theme {
@@ -16,20 +20,9 @@ body {
   --accent-light: var(--color-indigo-400);
   --accent-glow-shadow: var(--color-indigo-500);
 
-  /* Typography */
-  --text-primary: var(--color-slate-50); /* Clean high-contrast text */
-  --text-secondary: var(
-    --color-slate-400
-  ); /* Placeholder and secondary labels */
-  --text-muted: var(
-    --color-slate-600
-  ); /* For days outside the current month in the calendar */
-
-  /* Borders & Dividers */
-  --border-muted: var(
-    --color-slate-800
-  ); /* Subtle structural lines (e.g., the "or" separator) */
-  --border-focus: var(--color-indigo-500); /* Active border highlight color */
+  --text-primary: var(--color-slate-50);
+  --text-secondary: var(--color-slate-400);
+  --text-muted: var(--color-slate-600);
 
   /* --- Tailwind Mapping Assignments --- */
   --color-bg: var(--bg-main);

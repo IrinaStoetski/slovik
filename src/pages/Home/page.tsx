@@ -3,7 +3,7 @@ import { SparklesIcon } from "lucide-react";
 
 const Home = () => {
   return (
-    <section className="flex flex-col items-center justify-center px-3 gap-5 pt-5">
+    <section className="flex flex-col items-center pt-40 px-3 gap-5 h-full">
       <Input
         placeholder="Capture a word or phrase"
         icon={
