@@ -1,7 +1,8 @@
 import { TabList, Tabs } from "react-aria-components";
-import { TABS_CONFIG } from "./consts";
 import { useLocation } from "react-router";
+
 import { TabItem } from "./components";
+import { TABS_CONFIG } from "./consts";
 
 const Footer = () => {
   const location = useLocation();

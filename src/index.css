@@ -41,10 +41,8 @@ body {
   --color-accent-dark: var(--accent-dark);
 
   /* Effects & Radius */
-  --shadow-input-glow:
-    0 0 20px rgba(147, 112, 219, 0.12), inset 0 0 12px rgba(147, 112, 219, 0.05);
-  --shadow-focus-glow:
-    0 0 20px rgba(147, 112, 219, 0.2), inset 0 0 14px rgba(147, 112, 219, 0.1);
+  --shadow-input-glow: 0 0 20px rgba(147, 112, 219, 0.12), inset 0 0 12px rgba(147, 112, 219, 0.05);
+  --shadow-focus-glow: 0 0 20px rgba(147, 112, 219, 0.2), inset 0 0 14px rgba(147, 112, 219, 0.1);
   --shadow-light-glow: 0 0 12px rgba(147, 112, 219, 0.2);
 
   --radius-brand: 0.75rem;

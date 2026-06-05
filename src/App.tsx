@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router";
 
+import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home/page";
 import Library from "./pages/Library/page";
 import Practice from "./pages/Practice/page";
-import MainLayout from "./layouts/MainLayout";
 import { ROUTES } from "./utils/consts/routes";
 
 function App() {
