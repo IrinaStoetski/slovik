@@ -14,9 +14,9 @@ const Home = () => {
         <div className="rounded-full p-2 flex items-center justify-center w-16 h-16 bg-surface">
           <SparklesIcon className="w-8 h-8 text-accent" />
         </div>
-        <h1 className="w-full text-primary my-3 text-2xl font-bold">
-          Stat capturing words
-        </h1>
+        <h2 className="w-full text-primary my-3 text-2xl font-bold">
+          Start capturing words
+        </h2>
         <p className="text-secondary">
           Type any English word or phrase to get started.
         </p>

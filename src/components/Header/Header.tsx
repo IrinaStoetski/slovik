@@ -19,7 +19,6 @@ const Header = () => {
       <Button onPress={() => setIsMenuOpen((prev) => !prev)}>
         <MenuIcon size={24} />
       </Button>
-
       <Menu
         isOpen={isMenuOpen}
         email="user@example.com"
