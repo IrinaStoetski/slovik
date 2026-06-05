@@ -7,7 +7,7 @@ const Footer = () => {
   const location = useLocation();
 
   return (
-    <footer className="pt-3 text-center border-t border-t-muted bg-surface text-secondary text-sm w-full">
+    <footer className="pt-3 text-center border-t border-t-muted bg-surface text-secondary text-sm w-full shadow-light-glow">
       <Tabs selectedKey={location.pathname}>
         <TabList className="flex items-center justify-around gap-4">
           {TABS_CONFIG.map(({ title, href, icon }) => (

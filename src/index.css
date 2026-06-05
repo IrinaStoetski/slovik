@@ -16,13 +16,15 @@ body {
   --bg-surface: var(--color-slate-900);
   --bg-field: var(--color-slate-800);
 
-  --accent: var(--color-indigo-600);
-  --accent-light: var(--color-indigo-400);
+  --accent: var(--color-indigo-400);
+  --accent-light: var(--color-indigo-200);
+  --accent-dark: var(--color-indigo-900);
   --accent-glow-shadow: var(--color-indigo-500);
 
   --text-primary: var(--color-slate-50);
   --text-secondary: var(--color-slate-400);
   --text-muted: var(--color-slate-600);
+  --danger: var(--color-red-500);
 
   /* --- Tailwind Mapping Assignments --- */
   --color-bg: var(--bg-main);
@@ -32,15 +34,18 @@ body {
   --color-primary: var(--text-primary);
   --color-secondary: var(--text-secondary);
   --color-muted: var(--text-muted);
+  --color-danger: var(--danger);
 
   --color-accent: var(--accent);
   --color-accent-light: var(--accent-light);
-
-  --color-border-ui: var(--border-muted);
-  --color-border-active: var(--border-focus);
+  --color-accent-dark: var(--accent-dark);
 
   /* Effects & Radius */
-  --shadow-input-glow: 0 0 0 2px var(--border-focus);
-  --shadow-icon-glow: 0 0 20px var(--accent-glow-shadow);
+  --shadow-input-glow:
+    0 0 20px rgba(147, 112, 219, 0.12), inset 0 0 12px rgba(147, 112, 219, 0.05);
+  --shadow-focus-glow:
+    0 0 20px rgba(147, 112, 219, 0.2), inset 0 0 14px rgba(147, 112, 219, 0.1);
+  --shadow-light-glow: 0 0 12px rgba(147, 112, 219, 0.2);
+
   --radius-brand: 0.75rem;
 }

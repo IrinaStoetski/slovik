@@ -21,7 +21,7 @@ const Input = ({
     {icon}
     <RACInput
       className={twMerge(
-        "w-full rounded-md border border-accent p-4 pl-10 shadow-input-glow placeholder:text-muted",
+        "w-full outline-accent-dark focus:outline-2 rounded-md border border-accent-dark p-4 pl-10 shadow-input-glow placeholder:text-muted",
         icon ? "pl-12" : "pl-4",
         className,
       )}
