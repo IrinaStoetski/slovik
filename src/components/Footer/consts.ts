@@ -1,4 +1,5 @@
-import { HouseIcon, LibraryBigIcon, BrainIcon } from "lucide-react";
+import { BrainIcon, HouseIcon, LibraryBigIcon } from "lucide-react";
+
 import { ROUTES } from "../../utils/consts/routes";
 
 export const TABS_CONFIG = [

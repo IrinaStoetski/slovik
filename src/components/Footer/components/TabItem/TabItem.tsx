@@ -20,7 +20,7 @@ const TabItem = ({ title, href, Icon }: Props) => (
           className={({ isActive }) =>
             twMerge(
               "pb-2 transition text-secondary flex  border-transparent border-b-2 items-center justify-center flex-col gap-2",
-              isActive && "text-accent border-accent",
+              isActive && "text-accent border-accent"
             )
           }
         />
