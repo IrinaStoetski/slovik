@@ -1,9 +1,16 @@
+import { LibraryBigIcon } from "lucide-react";
+
+import EmptyState from "../../components/EmptyState";
+
 const Library = () => {
   return (
-    <div>
-      <h1>Welcome to the Library Page</h1>
-      <p>This is a simple library page component.</p>
-    </div>
+    <section className="h-full pt-40">
+      <EmptyState
+        icon={<LibraryBigIcon size={48} className="text-secondary" />}
+        title="Your library is empty"
+        description="Go capture some words!"
+      />
+    </section>
   );
 };
 
