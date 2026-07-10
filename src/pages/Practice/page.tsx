@@ -1,9 +1,16 @@
+import { BrainIcon } from "lucide-react";
+
+import EmptyState from "../../components/EmptyState";
+
 const Practice = () => {
   return (
-    <div>
-      <h1>Welcome to the Practice Page</h1>
-      <p>This is a simple practice page component.</p>
-    </div>
+    <section className="h-full pt-40">
+      <EmptyState
+        icon={<BrainIcon size={48} className="text-secondary" />}
+        title="No words yet"
+        description="Capture some words to start practicing"
+      />
+    </section>
   );
 };
 
